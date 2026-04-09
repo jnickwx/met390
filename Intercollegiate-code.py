@@ -23,7 +23,7 @@ ax.coastlines(color="white") #Added this to see easier
 plt.title("Latest GOES TrueColor")
 
 #Specific time for the GOES-19 data 
-G19 = GOES(satellite=19).nearesttime("2026-02-25 00")
+G19 = GOES(satellite=19).nearesttime("2026-03-26 00")
 
 #List specific products to display 
 products = ["NaturalColor", "DayCloudConvection", "AirMass"]
