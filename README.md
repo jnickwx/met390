@@ -1,1 +1,1 @@
-This is a simple code involving GOES satellite imagery
+This is a simple code involving GOES satellite imagery and NEXRAD radar from KLOT. 
