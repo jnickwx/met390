@@ -1,1 +1,2 @@
-This is a simple code involving GOES satellite imagery and NEXRAD radar from KLOT on March 23, 2023.
+Code involving GOES satellite imagery and NEXRAD radar from KLOT in March 2023.
+Looking into how aerosols affect cloud formation, specifically with thunderstorms or an MCS. 
