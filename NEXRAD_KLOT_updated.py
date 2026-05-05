@@ -42,6 +42,17 @@ def process_radar_file(file_path):
              vmin=0, vmax=75, cmap='NWSRef',
              projection=ccrs.PlateCarree(),
              gatefilter=gatefilter)
+
+        # --- Background ---
+        # Access the axes created in Py-ART
+        ax = display.ax
+        
+        ax.add_feature(cfeature.LAND, facecolor = 'lightgrey')
+        ax.add_feature(cfeature.OCEAN, facecolor = 'skyblue')
+        ax.add_feature(cfeature.COASTLINE)
+        ax.add_feature(cfeature.LAKES, edgecolor = 'black', facecolor = 'skyblue', alpha = 0.5)
+        ax.add_feature(cfeature.STATES, edgecolor = 'black', linewidth = 0.5) # Good for KLOT/Chicago area
+        
         
         display.plot_range_rings([50, 100, 150], col='black')
         display.plot_grid_lines()
